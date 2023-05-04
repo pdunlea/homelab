@@ -8,6 +8,8 @@ sudo apt install nodejs -y
 git clone https://github.com/louislam/uptime-kuma.git ~/uptime-kuma
 # change directory to ./uptime-kuma
 cd ~/uptime-kuma
+# install npm
+sudo apt install npm
 # run setup
 npm run setup
 # Setup uptime kuma to run automagically on startup
@@ -32,4 +34,4 @@ sudo chown nodejs:nodejs /opt/uptime-kuma -R
 # reload systemd services
 sudo systemctl daemon-reload
 # start uptime-kuma service on boot and now
-sudo systemctl enable uptime-kuma --nowd
+sudo systemctl enable uptime-kuma
