@@ -1,0 +1,12 @@
+[Unit]
+Description=Uptime Kuma
+
+[Service]
+ExecStart=/opt/uptime-kuma/uptime-kuma.sh
+Restart=always
+User=nodejs
+Group=nodejs
+WorkingDirectory=/opt/uptime-kuma
+
+[Install]
+WantedBy=multi-user.target
