@@ -30,6 +30,6 @@ sudo systemctl start containerd.service
 cp start.sh /etc/init.d/start.sh
 chmod +x /etc/init.d/start.sh
 
-# install and run home assistant
+# install and run homer
 ./start.sh
 
