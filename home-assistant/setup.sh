@@ -1,24 +1,34 @@
+sudo chmod +x update.sh
+sudo chmod +x start.sh
+sudo chmod +x restart.sh
 sudo apt-get update
 sudo apt-get upgrade -y
 
-# install dependencies
-sudo apt-get install -y python3 python3-dev python3-venv python3-pip bluez libffi-dev libssl-dev libjpeg-dev zlib1g-dev autoconf build-essential libopenjp2-7 libtiff5 libturbojpeg0-dev tzdata
+# install docker
+sudo apt-get update
+sudo apt-get install \
+ ca-certificates \
+ curl \
+ gnupg \
+ lsb-release
+curl -fsSL https://download.docker.com/linux/ubuntu/gpg | sudo gpg --dearmor -o /usr/share/keyrings/docker-archive-keyring.gpg
+echo \
+ "deb [arch=$(dpkg --print-architecture) signed-by=/usr/share/keyrings/docker-archive-keyring.gpg] https://download.docker.com/linux/ubuntu \
+ $(lsb_release -cs) stable" | sudo tee /etc/apt/sources.list.d/docker.list > /dev/null
 
-# create account
-sudo useradd -rm homeassistant -G dialout,gpio,i2c
+sudo apt-get update
+sudo apt-get install docker-ce docker-ce-cli containerd.io
+./pip-install.sh
+sudo apt-get update
 
-# Create virtual env
-sudo mkdir /srv/homeassistant
-sudo chown homeassistant:homeassistant /srv/homeassistant
+sudo curl -SL https://github.com/docker/compose/releases/download/v2.2.3/docker-compose-linux-x86_64 -o /usr/local/bin/docker-compose
+sudo chmod +x /usr/local/bin/docker-compose
+sudo systemctl enable docker.service
+sudo systemctl enable containerd.service
+sudo systemctl start docker.service
+sudo systemctl start containerd.service
 
-# Next up is to create and change to a virtual environment for Home Assistant Core.
-sudo -u homeassistant -H -s
-cd /srv/homeassistant
-python3 -m venv .
-source bin/activate
+sudo groupadd docker
+sudo usermod -aG docker $USER
+newgrp docker
 
-#
-python3 -m pip install wheel
-pip3 install homeassistant==2023.5.1
-
-hass
