@@ -28,5 +28,10 @@ sudo systemctl enable containerd.service
 sudo systemctl start docker.service
 sudo systemctl start containerd.service
 
+# setup restart on server restart
+cp start.sh /etc/init.d/start.sh
+chmod +x /etc/init.d/start.sh
+
 # install home assistant
 ./start.sh
+
