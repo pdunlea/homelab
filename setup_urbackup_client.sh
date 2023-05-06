@@ -1,6 +1,3 @@
-TF=$(mktemp) && wget "https://hndl.urbackup.org/Client/2.5.23/UrBackup%20Client%20Linux%202.5.23.sh" -O $TF && sudo sh $TF; rm -f $TF
-
-
 # grab the code
 apt install build-essential "g++" libwxgtk3.0-dev "libcrypto++-dev" libz-dev
 
