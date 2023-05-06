@@ -9,7 +9,7 @@
 title: "App Dashboard"
 subtitle: "OldmanQ"
 # documentTitle: "Welcome" # Customize the browser tab text
-logo: "assets/logo.png"
+logo: "assets/logos/logo.png"
 # Alternatively a fa icon can be provided:
 # icon: "fas fa-skull-crossbones"
 
@@ -118,11 +118,11 @@ services:
     # logo: "path/to/logo"
     items:
       - name: "Uptime Kuma"
-        logo: "assets/uptimekuma.svg"
+        logo: "assets/logos/uptimekuma.svg"
         # Alternatively a fa icon can be provided:
         # icon: "fab fa-jenkins"
         subtitle: "Uptime application"
-        tag: "app"
+        tag: "container"
         keywords: "uptime kuma" # optional keyword used for searching purpose
         url: "http://uptime-kuma:3001/dashboard"
         target: "_blank" # optional html tag target attribute
@@ -137,9 +137,10 @@ services:
     icon: "fas fa-heartbeat"
     items:
       - name: "Home Assistant"
-        logo: "assets/homeassistant.png"
+        logo: "assets/logos/homeassistant.png"
         subtitle: "Home Automation"
-        tag: "home assistant automation"
+        tag: "container"
+        keywords: "home assistant automation"
         url: "http://home-assistant:8123"
         target: "_blank" # optional html a tag target attribute
         # class: "green" # optional custom CSS class for card, useful with custom stylesheet
