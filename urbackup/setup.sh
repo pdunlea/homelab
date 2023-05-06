@@ -1,5 +1,6 @@
 sudo apt update
 sudo apt upgrade -y
+sudo apt install software-properties-common
 
 # Install urbackup
 sudo add-apt-repository ppa:uroni/urbackup
