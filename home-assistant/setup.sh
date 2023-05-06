@@ -1,4 +1,3 @@
-sudo chmod +x update.sh
 sudo chmod +x start.sh
 sudo chmod +x restart.sh
 sudo apt-get update
