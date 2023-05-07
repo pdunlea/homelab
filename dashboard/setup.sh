@@ -32,3 +32,5 @@ chmod +x /etc/init.d/start.sh
 # install and run homer
 ./start.sh
 
+chmod +x ../setup_urbackup_client.sh
+../setup_urbackup_client.sh

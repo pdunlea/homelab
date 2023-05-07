@@ -35,3 +35,9 @@ sudo chown nodejs:nodejs /opt/uptime-kuma -R
 sudo systemctl daemon-reload
 # start uptime-kuma service on boot and now
 sudo systemctl enable uptime-kuma
+
+touch /etc/init.d/start.sh
+chmod +x /etc/init.d/start.sh
+
+chmod +x ../setup_urbackup_client.sh
+../setup_urbackup_client.sh
