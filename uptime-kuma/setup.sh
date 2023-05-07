@@ -9,7 +9,7 @@ git clone https://github.com/louislam/uptime-kuma.git ~/uptime-kuma
 # change directory to ./uptime-kuma
 cd ~/uptime-kuma
 # install npm
-sudo apt install npm
+sudo apt install npm -y
 # run setup
 npm run setup
 # Setup uptime kuma to run automagically on startup

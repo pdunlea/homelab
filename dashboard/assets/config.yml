@@ -117,22 +117,22 @@ services:
     # A path to an image can also be provided. Note that icon take precedence if both icon and logo are set.
     # logo: "path/to/logo"
     items:
-      - name: "Uptime Kuma"
-        logo: "assets/logos/uptimekuma.svg"
-        # Alternatively a fa icon can be provided:
-        # icon: "fab fa-jenkins"
-        subtitle: "Uptime application"
-        tag: "container"
-        keywords: "uptime kuma" # optional keyword used for searching purpose
-        url: "http://uptime-kuma:3001/dashboard"
-        target: "_blank" # optional html tag target attribute
-      - name: "UrBackup"
-        logo: "assets/tools/sample2.png"
-        subtitle: "Backup Application"
+      - name: "Proxmox 1"
+        logo: "assets/logos/proxmox.png"
+        subtitle: "Container Provider"
         tag: "app"
         # Optional tagstyle
         tagstyle: "is-success"
-        url: "#"
+        url: "https://192.168.1.194:8006"
+        target: "_blank" # optional html tag target attribute
+      - name: "Uptime Kuma"
+        logo: "assets/logos/uptimekuma.svg"
+        subtitle: "Uptime application"
+        tag: "container"
+        tagstyle: "is-success"
+        keywords: "uptime kuma" # optional keyword used for searching purpose
+        url: "http://uptime-kuma:3001/dashboard"
+        target: "_blank" # optional html tag target attribute
   - name: "Utilities"
     icon: "fas fa-heartbeat"
     items:
@@ -140,8 +140,7 @@ services:
         logo: "assets/logos/homeassistant.png"
         subtitle: "Home Automation"
         tag: "container"
+        tagstyle: "is-success"
         keywords: "home assistant automation"
         url: "http://home-assistant:8123"
         target: "_blank" # optional html a tag target attribute
-        # class: "green" # optional custom CSS class for card, useful with custom stylesheet
-        # background: red # optional color for card to set color directly without custom stylesheet
