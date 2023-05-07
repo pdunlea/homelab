@@ -31,3 +31,4 @@ chmod +x /etc/init.d/start.sh
 
 # install and run home assistant
 ./start.sh
+

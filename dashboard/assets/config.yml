@@ -127,12 +127,12 @@ services:
         url: "http://uptime-kuma:3001/dashboard"
         target: "_blank" # optional html tag target attribute
       - name: "UrBackup"
-        logo: "assets/logos/urbackup.png"
+        logo: "assets/tools/sample2.png"
         subtitle: "Backup Application"
         tag: "app"
         # Optional tagstyle
         tagstyle: "is-success"
-        url: "http://urbackup:55414"
+        url: "#"
   - name: "Utilities"
     icon: "fas fa-heartbeat"
     items:
