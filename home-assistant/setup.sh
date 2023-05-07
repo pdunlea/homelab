@@ -31,6 +31,3 @@ chmod +x /etc/init.d/start.sh
 
 # install and run home assistant
 ./start.sh
-
-chmod +x ../setup_urbackup_client.sh
-../setup_urbackup_client.sh
