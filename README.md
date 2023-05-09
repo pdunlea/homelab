@@ -40,3 +40,19 @@ This is used to help keep home automation working as desired.
 * CPUs: 2
 * Memory: 2048
 * Port: 8123
+
+### Homebridge
+
+This works in conjunction with Home Assistant to help manage smart devices.
+
+* Disk Size: 10  
+* CPUs: 1
+* Memory: 1024
+* Port: 8581
+
+### 
+
+* Disk Size:
+* CPUs:
+* Memory:
+* Port: 
