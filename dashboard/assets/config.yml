@@ -102,6 +102,9 @@ links:
   - name: "Github"
     icon: "fas fa-book"
     url: "https://github.com"
+  - name: "Fios Router"
+    icon: "fab fa-settings"
+    url: "https://192.168.1.1/#/login/"
   # this will link to a second homer page that will load config from page2.yml and keep default config values as in config.yml file
   # see url field and assets/page.yml used in this example:
 #  - name: "Second Page"

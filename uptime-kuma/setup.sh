@@ -35,3 +35,4 @@ sudo chown nodejs:nodejs /opt/uptime-kuma -R
 sudo systemctl daemon-reload
 # start uptime-kuma service on boot and now
 sudo systemctl enable uptime-kuma
+reboot
