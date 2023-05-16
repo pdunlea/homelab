@@ -155,8 +155,8 @@ services:
         keywords: "home assistant automation"
         url: "http://home-assistant:8123"
         target: "_blank" # optional html a tag target attribute
-      - name: "Home Bridge"
-        logo: "assets/logos/homebridge.png"
+      - name: "Homebridge"
+        logo: "assets/logos/homebridge.jpg"
         subtitle: "Home Automation"
         tag: "container"
         tagstyle: "is-success"
