@@ -8,11 +8,22 @@ sudo chmod +x setup.sh
 ./setup.sh
 ```
 
+### Truenas
+Set this up first with a ZFS pool for storing backups
+Make sure to share the drive with an NFS
+
 ### Proxmox
 
 Whole PC - runs VMs and containers. 
 
 * Port 8006
+
+Setup steps for proxmox:
+1: Make sure that we've already got Truenas going
+2: set the ip for the trunas server into the setup.sh file for within proxmox
+3: install git and run the setup, this will create an NFS mount to the truenas server
+4: Go to Datacenter -> Storage and add a link to the truenas NFS
+5: Go to backups and create a backup for all VMs pointing to the truenas store
 
 ### Uptime Kuma
 
@@ -49,6 +60,12 @@ This works in conjunction with Home Assistant to help manage smart devices.
 * CPUs: 1
 * Memory: 1024
 * Port: 8581
+
+### Crontasks vm
+
+* Disk Size: 32
+* CPUs: 1
+* Memory: 1024
 
 ### 
 
