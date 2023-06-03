@@ -63,7 +63,8 @@ This works in conjunction with Home Assistant to help manage smart devices.
 * Memory: 1024
 * Port: 8581
 
-### Crontasks vm
+### Crontasks vm 
+- NOTE: Must be a VM not a CT 
 
 After running setup2.sh but before setup3.sh, make sure to run the command on proxmox server to give this access to the nas
 
