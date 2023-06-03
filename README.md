@@ -24,6 +24,8 @@ Setup steps for proxmox:
 3: install git and run the setup, this will create an NFS mount to the truenas server
 4: Go to Datacenter -> Storage and add a link to the truenas NFS
 5: Go to backups and create a backup for all VMs pointing to the truenas store
+6: For any VM needing access to the NAS, run the following command
+* pct set <id> -mp0 /mnt/pve/truenas1,mp=/mnt/nas_share
 
 ### Uptime Kuma
 
@@ -63,7 +65,7 @@ This works in conjunction with Home Assistant to help manage smart devices.
 
 ### Crontasks vm
 
-NOTE:  This must be setup as a privileged container
+After running setup2.sh but before setup3.sh, make sure to run the command on proxmox server to give this access to the nas
 
 * Disk Size: 32
 * CPUs: 1
