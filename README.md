@@ -63,6 +63,8 @@ This works in conjunction with Home Assistant to help manage smart devices.
 
 ### Crontasks vm
 
+NOTE:  This must be setup as a privileged container
+
 * Disk Size: 32
 * CPUs: 1
 * Memory: 1024
