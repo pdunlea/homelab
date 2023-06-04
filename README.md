@@ -70,7 +70,7 @@ After running setup2.sh but before setup3.sh, make sure to run the command on pr
 
 * Disk Size: 32
 * CPUs: 1
-* Memory: 1024
+* Memory: 2048
 
 ### 
 
