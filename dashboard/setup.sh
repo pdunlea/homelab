@@ -26,8 +26,9 @@ sudo systemctl start docker.service
 sudo systemctl start containerd.service
 
 # setup restart on server restart
-cp autostart.sh /etc/init.d/start.sh
-chmod +x /etc/init.d/autostart.sh
+cp dashboard.service /etc/systemd/system/dashboard.service
+sudo systemctl enable dashboard.service
+sudo systemctl start dashboard.service
 
 # install and run homer
 ./start.sh
